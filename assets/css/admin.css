@@ -1,0 +1,32 @@
+body {
+	background: #ededed;
+	overflow-x: hidden;
+}
+
+.navbar-admin {
+	background: #333;
+	width: 100%;
+	overflow: auto;
+}
+
+.navbar-admin ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.navbar-admin ul > li {
+	float: left;
+}
+
+.navbar-admin ul > li > a {
+	display: inline-block;
+	padding: 15px 20px;
+	color: #ddd;
+}
+
+.navbar-admin ul > li > a:hover {
+	background: #1a1a1a;
+	color: #fff;
+	text-decoration: none;
+}

@@ -1,0 +1,153 @@
+body {
+	background: url(../img/img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#logo {
+	width: 300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#header {
+	background: #201D18;
+	padding: 10px 0;
+	border-bottom: 2px solid #BBAA95;
+}
+
+#navigation > ul {
+	list-style-type: none;
+	overflow: hidden;
+	text-align: center;
+	font-family: times new roman;
+}
+
+#navigation > ul > li {
+	margin: 0px 10px;
+	display: inline-block;
+}
+
+#navigation > ul > li > a {
+	display: inline-block;
+	padding: 5px 30px;
+	color: #8A8B85;
+	border: 2px solid #8A8B85;
+	border-radius: 50px;
+	transition: 300ms ease;
+}
+
+#navigation > ul > li > a:hover, #navigation > ul > li > a.active {
+	background: #fff;
+	border-color: #fff;
+	#color: #201D18;
+	text-decoration: none;
+}
+
+.orange {
+	background: #E8BF44;
+	padding: 20px;
+	width: 100%;
+}
+
+.white {
+	background: white;
+	padding: 20px;
+	width: 100%;
+}
+
+.carousel img {
+	min-width: 100%;
+}
+
+.carousel-item {
+	max-height: 300px;
+	overflow: hidden;
+	padding: 10px;
+}
+
+#carousel {
+	padding: 20px 0px;
+	background: rgba(0, 0, 0, 0.8);
+	border-bottom: 5px solid #BBAA95
+}
+
+#rooms {
+	padding: 20px 0;
+	background: #ededed;
+}
+
+#reservation {
+	padding: 20px 0;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#aside {
+	padding: 20px 0;
+	background: #201D18;
+	color: #fff;
+}
+
+#footer {
+	padding: 10px 0;
+	background: #010101;
+}
+
+#facilites {
+	padding: 20px 0;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#menu-nav-collapse {
+	display: none !important;
+}
+
+.fixed {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.9) !important;
+	z-index: 9999;
+	padding: 10px !important;
+}
+
+.fixed ul {
+	margin: 0;
+	padding: 20;
+}
+
+.collapsed {
+	display: block !important;
+}
+
+@media screen and (max-width: 480px) {
+	#menu-nav-collapse {
+		display: block !important;
+	}
+
+	#navigation li:not(#menu-nav-collapse) {
+		display: none;
+	}
+	#navigation ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	#navigation ul > li > a {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		margin: 10px 0;
+	}
+}
